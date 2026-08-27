@@ -1,108 +1,76 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Ruang belajar praktikum Pengembangan Perangkat Lunak Bioinformatika."
-    />
-    <title>Pengembangan Perangkat Lunak Bioinformatika</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
-        <span class="brand-mark">BIF</span>
-        <span>Praktikum</span>
-      </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-        Menu
-      </button>
-      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
-        <a href="#tentang">Tentang</a>
-        <a href="#materi">Materi</a>
-        <a href="#proyek">Proyek</a>
-        <a href="#kontak">Kontak</a>
-      </nav>
-    </header>
-
-    <main>
-      <section id="beranda" class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">BIF-IPB / PRAKTIKUM</p>
-          <h1>Membangun perangkat lunak untuk sains hayat.</h1>
-          <p class="hero-description">
-            Ruang kerja praktikum untuk merancang, merencanakan, dan mengembangkan solusi
-            perangkat lunak pada permasalahan bioinformatika.
-          </p>
-          <a class="button" href="#materi">Lihat materi praktikum <span aria-hidden="true">&#8595;</span></a>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="sequence-card">
-            <span>SEQUENCE / 01</span>
-            <strong>ATG CCT GAA TGC</strong>
-            <i></i><i></i><i></i><i></i>
-          </div>
-          <div class="node node-a"></div>
-          <div class="node node-b"></div>
-          <div class="node node-c"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portal praktikum Pengembangan Perangkat Lunak Bioinformatika BIF-IPB." />
+  <title>Beranda | PPL Bioinformatika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">Lewati navigasi</a>
+  <button class="menu-button" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+  <aside id="sidebar" class="sidebar">
+    <a class="site-title" href="#beranda"><span class="site-mark">BIF</span><span>Pengembangan Perangkat Lunak Bioinformatika</span></a>
+    <label class="search-box" for="navigation-search"><span class="visually-hidden">Cari navigasi</span><input id="navigation-search" type="search" placeholder="Cari materi" autocomplete="off" /><span aria-hidden="true">/</span></label>
+    <p id="no-results" class="no-results" hidden>Materi tidak ditemukan.</p>
+    <nav class="course-nav" aria-label="Navigasi praktikum">
+      <a class="active" data-search="beranda home" href="#beranda">Beranda</a>
+      <a data-search="tentang praktikum mata kuliah" href="#tentang">Tentang</a>
+      <details open>
+        <summary data-search="materi pertemuan modul">Materi Praktikum</summary>
+        <a data-search="pertemuan 1 tor tender proposal proyek" href="#pertemuan-1">Pertemuan 1: ToR, Tender, Proposal</a>
+        <a data-search="pertemuan 2 software development plan sdp" href="#pertemuan-2">Pertemuan 2: Software Development Plan</a>
+        <a data-search="materi berikutnya" href="#materi-berikutnya">Materi berikutnya</a>
+      </details>
+      <a data-search="proyek kelompok" href="#proyek">Proyek Kelompok</a>
+      <a data-search="penilaian evaluasi" href="#penilaian">Penilaian</a>
+      <a data-search="tools referensi" href="#tools">Tools dan Referensi</a>
+      <a data-search="kalender jadwal" href="#kalender">Kalender</a>
+      <a data-search="pengajar asisten kontak" href="#tim">Tim Praktikum</a>
+    </nav>
+    <div class="sidebar-footer"><a href="https://github.com/bif-ipb/pengembangan-perangkat-lunak-bioinformatika">Lihat source di GitHub</a><span>BIF-IPB</span></div>
+  </aside>
+  <main id="content" class="content">
+    <article>
+      <header id="beranda" class="page-header">
+        <p class="breadcrumb">BIF-IPB / PRAKTIKUM</p>
+        <h1>Pengembangan Perangkat Lunak Bioinformatika</h1>
+        <p class="lead">Portal materi, proyek, dan referensi untuk praktikum pengembangan perangkat lunak berbasis permasalahan bioinformatika.</p>
+      </header>
+      <section id="tentang">
+        <h2>Tentang praktikum</h2>
+        <p>Praktikum ini melatih proses pengembangan perangkat lunak secara terstruktur: memahami kebutuhan pengguna, merancang solusi, menyusun rencana pengembangan, dan mengelola artefak proyek. Kasus yang digunakan berangkat dari kebutuhan riset bioinformatika.</p>
+        <div class="callout"><strong>Fokus kerja</strong><p>Setiap kelompok membangun dokumentasi dan solusi proyek secara bertahap, bukan hanya mengumpulkan kode akhir.</p></div>
+      </section>
+      <section id="materi">
+        <h2>Materi praktikum</h2>
+        <p>Materi disusun mengikuti tahapan pengembangan proyek. Tautan modul dan instruksi akan ditambahkan pada setiap pertemuan.</p>
+        <div class="material-list">
+          <a id="pertemuan-1" class="material-item" href="#proyek"><span class="week">01</span><span><strong>ToR, Tender, dan Proposal Proyek</strong><small>Memahami kebutuhan proyek dan menyusun proposal solusi.</small></span><span aria-hidden="true">&#8594;</span></a>
+          <a id="pertemuan-2" class="material-item" href="#proyek"><span class="week">02</span><span><strong>Software Development Plan</strong><small>Menyusun rencana pengembangan yang dapat dilaksanakan dan dievaluasi.</small></span><span aria-hidden="true">&#8594;</span></a>
+          <a id="materi-berikutnya" class="material-item muted" href="#kalender"><span class="week">...</span><span><strong>Materi berikutnya</strong><small>Akan diperbarui sesuai pelaksanaan praktikum.</small></span><span aria-hidden="true">&#8594;</span></a>
         </div>
       </section>
-
-      <section id="tentang" class="section intro-section">
-        <div>
-          <p class="eyebrow">TENTANG PRAKTIKUM</p>
-          <h2>Dari kebutuhan riset ke produk yang dapat dipakai.</h2>
-        </div>
-        <p>
-          Praktikum ini berfokus pada proses pengembangan perangkat lunak secara terstruktur,
-          dengan studi kasus dan proyek dalam ranah bioinformatika. Setiap kelompok bekerja dari
-          perumusan kebutuhan hingga rencana implementasi.
-        </p>
+      <section id="proyek">
+        <h2>Proyek kelompok</h2>
+        <p>Proyek dimulai dari penetapan ruang lingkup dan kebutuhan. Setiap keluaran harus dapat ditelusuri kembali ke masalah bioinformatika yang ingin diselesaikan.</p>
+        <ol class="steps">
+          <li><strong>Definisikan masalah</strong><span>Rumuskan konteks, pemangku kepentingan, dan kebutuhan utama.</span></li>
+          <li><strong>Susun proposal</strong><span>Bangun argumen solusi, ruang lingkup, serta luaran proyek.</span></li>
+          <li><strong>Rencanakan pengembangan</strong><span>Tetapkan proses, jadwal, risiko, dan pembagian kerja tim.</span></li>
+        </ol>
       </section>
-
-      <section id="materi" class="section">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">MATERI</p>
-            <h2>Jejak pembelajaran</h2>
-          </div>
-          <p class="status"><span></span> Pembaruan materi berlangsung</p>
-        </div>
-        <div id="materials-grid" class="materials-grid" aria-live="polite"></div>
-      </section>
-
-      <section id="proyek" class="section project-section">
-        <div class="project-panel">
-          <p class="eyebrow">PROYEK KELOMPOK</p>
-          <h2>Rancang solusi yang dapat dipertanggungjawabkan.</h2>
-          <p>
-            Mulai dari ToR dan tender, susun proposal, lalu terjemahkan kebutuhan tersebut ke
-            dalam Software Development Plan yang jelas dan dapat dieksekusi.
-          </p>
-          <div class="project-steps">
-            <span>01. Analisis kebutuhan</span>
-            <span>02. Perencanaan solusi</span>
-            <span>03. Pengembangan iteratif</span>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="kontak" class="site-footer">
-      <span>Pengembangan Perangkat Lunak Bioinformatika</span>
-      <span>BIF-IPB</span>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+      <section id="penilaian"><h2>Penilaian</h2><p>Komponen dan bobot penilaian akan dipublikasikan pada halaman ini. Gunakan umpan balik setiap pertemuan sebagai dasar perbaikan artefak proyek.</p></section>
+      <section id="tools"><h2>Tools dan referensi</h2><ul><li><a href="https://git-scm.com/">Git</a> untuk pelacakan perubahan dan kolaborasi kode.</li><li><a href="https://github.com/">GitHub</a> untuk repository, issue, dan dokumentasi proyek.</li><li><a href="https://code.visualstudio.com/">Visual Studio Code</a> sebagai salah satu editor yang dapat digunakan.</li></ul></section>
+      <section id="kalender"><h2>Kalender</h2><p>Jadwal pertemuan, tenggat tugas, dan agenda penting akan diperbarui di sini.</p></section>
+      <section id="tim"><h2>Tim praktikum</h2><p>Informasi pengajar dan asisten praktikum akan ditambahkan setelah dikonfirmasi.</p></section>
+    </article>
+    <footer>Materi praktikum Pengembangan Perangkat Lunak Bioinformatika &middot; BIF-IPB</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
 </html>
