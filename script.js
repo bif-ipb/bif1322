@@ -3,6 +3,14 @@ const sidebar = document.querySelector(".sidebar");
 const search = document.querySelector("#navigation-search");
 const navItems = [...document.querySelectorAll(".course-nav a, .course-nav summary")];
 const noResults = document.querySelector("#no-results");
+const programWebsiteLink = document.querySelector(".sidebar-footer a");
+
+if (programWebsiteLink) {
+  programWebsiteLink.href = "https://bioinformatika.ipb.ac.id/";
+  programWebsiteLink.textContent = "Web Bioinformatika IPB University";
+  programWebsiteLink.target = "_blank";
+  programWebsiteLink.rel = "noopener";
+}
 
 const courseNav = document.querySelector(".course-nav");
 const staffLink = courseNav.querySelector('a[href="tim.html"], a[href="staff.html"]');
