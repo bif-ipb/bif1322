@@ -4,6 +4,16 @@ const search = document.querySelector("#navigation-search");
 const navItems = [...document.querySelectorAll(".course-nav a, .course-nav summary")];
 const noResults = document.querySelector("#no-results");
 
+const courseNav = document.querySelector(".course-nav");
+const staffLink = courseNav.querySelector('a[href="tim.html"], a[href="staff.html"]');
+
+if (staffLink) {
+  staffLink.href = "staff.html";
+  staffLink.textContent = "Staff";
+  staffLink.dataset.search = "staff professor asisten pengajar kontak";
+  courseNav.querySelector('a[href="index.html"]').insertAdjacentElement("afterend", staffLink);
+}
+
 menuButton.addEventListener("click", () => {
   const isOpen = sidebar.classList.toggle("is-open");
   menuButton.setAttribute("aria-expanded", String(isOpen));
