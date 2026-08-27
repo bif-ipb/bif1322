@@ -1,7 +1,6 @@
 const menuButton = document.querySelector(".menu-button");
 const sidebar = document.querySelector(".sidebar");
 const search = document.querySelector("#navigation-search");
-const navItems = [...document.querySelectorAll(".course-nav a, .course-nav summary")];
 const noResults = document.querySelector("#no-results");
 const programWebsiteLink = document.querySelector(".sidebar-footer a");
 
@@ -13,6 +12,8 @@ if (programWebsiteLink) {
 }
 
 const courseNav = document.querySelector(".course-nav");
+courseNav.querySelectorAll('a[href="penilaian.html"], a[href="referensi.html"]').forEach((link) => link.remove());
+const navItems = [...courseNav.querySelectorAll("a, summary")];
 const staffLink = courseNav.querySelector('a[href="tim.html"], a[href="staff.html"]');
 
 if (staffLink) {
