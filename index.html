@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ruang belajar praktikum Pengembangan Perangkat Lunak Bioinformatika."
+    />
+    <title>Pengembangan Perangkat Lunak Bioinformatika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#beranda" aria-label="Kembali ke beranda">
+        <span class="brand-mark">BIF</span>
+        <span>Praktikum</span>
+      </a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
+        Menu
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
+        <a href="#tentang">Tentang</a>
+        <a href="#materi">Materi</a>
+        <a href="#proyek">Proyek</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="beranda" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">BIF-IPB / PRAKTIKUM</p>
+          <h1>Membangun perangkat lunak untuk sains hayat.</h1>
+          <p class="hero-description">
+            Ruang kerja praktikum untuk merancang, merencanakan, dan mengembangkan solusi
+            perangkat lunak pada permasalahan bioinformatika.
+          </p>
+          <a class="button" href="#materi">Lihat materi praktikum <span aria-hidden="true">&#8595;</span></a>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="sequence-card">
+            <span>SEQUENCE / 01</span>
+            <strong>ATG CCT GAA TGC</strong>
+            <i></i><i></i><i></i><i></i>
+          </div>
+          <div class="node node-a"></div>
+          <div class="node node-b"></div>
+          <div class="node node-c"></div>
+        </div>
+      </section>
+
+      <section id="tentang" class="section intro-section">
+        <div>
+          <p class="eyebrow">TENTANG PRAKTIKUM</p>
+          <h2>Dari kebutuhan riset ke produk yang dapat dipakai.</h2>
+        </div>
+        <p>
+          Praktikum ini berfokus pada proses pengembangan perangkat lunak secara terstruktur,
+          dengan studi kasus dan proyek dalam ranah bioinformatika. Setiap kelompok bekerja dari
+          perumusan kebutuhan hingga rencana implementasi.
+        </p>
+      </section>
+
+      <section id="materi" class="section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">MATERI</p>
+            <h2>Jejak pembelajaran</h2>
+          </div>
+          <p class="status"><span></span> Pembaruan materi berlangsung</p>
+        </div>
+        <div id="materials-grid" class="materials-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="proyek" class="section project-section">
+        <div class="project-panel">
+          <p class="eyebrow">PROYEK KELOMPOK</p>
+          <h2>Rancang solusi yang dapat dipertanggungjawabkan.</h2>
+          <p>
+            Mulai dari ToR dan tender, susun proposal, lalu terjemahkan kebutuhan tersebut ke
+            dalam Software Development Plan yang jelas dan dapat dieksekusi.
+          </p>
+          <div class="project-steps">
+            <span>01. Analisis kebutuhan</span>
+            <span>02. Perencanaan solusi</span>
+            <span>03. Pengembangan iteratif</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="kontak" class="site-footer">
+      <span>Pengembangan Perangkat Lunak Bioinformatika</span>
+      <span>BIF-IPB</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
